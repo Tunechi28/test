@@ -3,7 +3,9 @@ name: first
 on: push
 
 jobs:
-    build:
-        - name: Setup Node.js environment
-          runs-on: ubuntu_latest
-          uses: actions/setup-node@v3.5.1
+    build: 
+        name: node environment
+        runs-on: ubuntu-latest
+        steps:
+            - name: Setup Node.js environment
+              uses: actions/setup-node@v3.5.1
